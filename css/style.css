@@ -292,6 +292,8 @@ a:hover { text-decoration: underline; }
   color: var(--lavender);
   font-size: 3rem;
   overflow: hidden;
+  image-rendering: high-quality;
+  transform: translateZ(0); /* Forces hardware acceleration for smoother edges */
 }
 
 .about-avatar-placeholder {
