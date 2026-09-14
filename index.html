@@ -1,55 +1,110 @@
----
-layout: default
-title: "Antony Gobriel – Economist"
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Antony Gobriel – Economist</title>
+  <!-- This line connects the file to your new css folder -->
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* Custom styling for your specific single-page elements */
+    .affiliations {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: center;
+      margin-bottom: 48px;
+    }
+    .affiliations img {
+      transition: transform 0.2s;
+      opacity: 0.9;
+    }
+    .affiliations a:hover img {
+      transform: scale(1.05);
+      opacity: 1;
+    }
+    details {
+      background: var(--bg-card);
+      padding: 14px 18px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      margin-top: 12px;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+    summary {
+      cursor: pointer;
+      font-weight: 500;
+      color: var(--lavender-dark);
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body>
 
-<img src="profile.jpg" width="160" style="border-radius: 10px; display: block; margin: 0 auto 20px auto;">
+  <main class="page">
+    
+    <!-- ── Hero Section ── -->
+    <div class="about-hero">
+      <!-- Pointing directly to profile.jpg in your main folder -->
+      <img src="profile.jpg" alt="Antony Gobriel" class="about-avatar" />
+      <div class="about-text">
+        <h1>Antony Gobriel</h1>
+        <p class="about-role">PhD Student in Economic History of Migration and Demography</p>
+        <p class="about-institution">IÉSEG School of Management | UMR 9221 – LEM, CNRS | University of Lille</p>
+        <div class="about-links" style="margin-top: 16px;">
+          <a href="cv.pdf" class="btn btn-primary" target="_blank">Download CV (PDF)</a>
+          <a href="mailto:a.gobriel@ieseg.fr" class="btn btn-outline">Email</a>
+          <a href="https://bsky.app/profile/antonygobriel.bsky.social" class="btn btn-outline" target="_blank">BlueSky</a>
+          <a href="https://www.linkedin.com/in/antony-gobriel" class="btn btn-outline" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+    </div>
 
-# Antony Gobriel
+    <!-- ── Biography ── -->
+    <div class="section-label">Biography</div>
+    <p style="margin-bottom: 20px; font-size: 1.05rem;">
+      I am a PhD Candidate in Economics at the University of Lille (LEM-CNRS 9221) and the IÉSEG School of Management. I am also a member of the IFLAME research center.
+    </p>
+    <p style="margin-bottom: 20px; font-size: 1.05rem;">
+      I hold a Master's degree in Public Policy from Université Paris 1 Panthéon-Sorbonne, as well as Bachelor's degrees in Economics from Paris 1 and Cairo University.
+    </p>
+    <p style="margin-bottom: 48px; font-size: 1.05rem;">
+      My research specializes in the economic history of migration and demography. I study how migration contributed to economic growth in the West since the Industrial Revolution.
+    </p>
 
-PhD Student in Economic History of Migration and Demography  
-**IÉSEG School of Management** | **UMR 9221 – LEM, CNRS** | **University of Lille**
+    <!-- ── Affiliations Logos ── -->
+    <h2 class="section-title">Affiliations</h2>
+    <div class="affiliations">
+      <a href="https://www.cnrs.fr/" target="_blank"><img src="cnrs.png" height="45" alt="CNRS"></a>
+      <a href="https://famigrowth.hypotheses.org/" target="_blank"><img src="famigrowth.png" height="45" alt="FamiGrowth"></a>
+      <a href="https://www.ieseg.fr/" target="_blank"><img src="ieseg.jpg" height="45" alt="IÉSEG"></a>
+      <a href="https://iflame.ieseg.fr/" target="_blank"><img src="iflame.png" height="45" alt="IFLAME"></a>
+      <a href="https://lem.univ-lille.fr/" target="_blank"><img src="lem.png" height="45" alt="LEM"></a>
+      <a href="https://www.univ-lille.fr/" target="_blank"><img src="univlille.png" height="45" alt="University of Lille"></a>
+    </div>
 
-<hr>
+    <!-- ── Research ── -->
+    <h2 class="section-title">Research & Working Papers</h2>
+    <div class="card" style="margin-bottom: 48px;">
+      <p class="card-title">The Rise of International Migration: Evidence from Genealogical Data</p>
+      <p class="card-meta">Work in Progress, 2026</p>
+      <p class="card-body" style="margin-bottom: 0;">
+        With <a href="https://www.simone-moriconi.com/" target="_blank">Simone Moriconi</a> and <a href="https://sites.google.com/view/riccardoturati" target="_blank">Riccardo Turati</a>.
+      </p>
+      <details>
+        <summary>View Abstract</summary>
+        Little research has identified the determinants of historical migration flows in Europe, largely due to data scarcity. Using a new genealogical dataset, we study the transitions from regional migration to intra-European and transatlantic migration.
+      </details>
+    </div>
 
-## Biography
+    <!-- ── Teaching ── -->
+    <h2 class="section-title">Teaching</h2>
+    <div class="course-row">
+      <span class="course-name" style="color: var(--lavender-dark);">Microeconomics</span>
+      <span class="course-detail">Lecturer, IÉSEG School of Management (Undergraduate) · Fall 2025</span>
+    </div>
 
-I am a PhD Candidate in Economics at the University of Lille (LEM-CNRS 9221) and the IÉSEG School of Management. I am also a member of the IFLAME research center.
-
-I hold a Master's degree in Public Policy from Université Paris 1 Panthéon-Sorbonne, as well as Bachelor's degrees in Economics from Paris 1 and Cairo University.
-
-My research specializes in the economic history of migration and demography. I study how migration contributed to economic growth in the West since the Industrial Revolution.
-
-## Research & Working Papers
-
-* **The Rise of International Migration: Evidence from Genealogical Data** *(Work in Progress, 2026)*  
-  *With* [Simone Moriconi](https://www.simone-moriconi.com/) *and* [Riccardo Turati](https://sites.google.com/view/riccardoturati)  
-  <details>
-  <summary>Abstract</summary>
-  Little research has identified the determinants of historical migration flows in Europe, largely due to data scarcity. Using a new genealogical dataset, we study the transitions from regional migration to intra-European and transatlantic migration.
-  </details>
-
-## Teaching
-
-* **Microeconomics** – Lecturer, IÉSEG School of Management (Undergraduate), Fall 2025
-
-## Curriculum Vitae
-
-* [Download my CV (PDF)](cv.pdf)
-
-## Affiliations
-
-<div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: center; margin-top: 8px;">
-  <a href="https://www.cnrs.fr/"><img src="cnrs.png" height="40" alt="CNRS"></a>
-  <a href="https://famigrowth.hypotheses.org/"><img src="famigrowth.png" height="40" alt="FamiGrowth"></a>
-  <a href="https://www.ieseg.fr/"><img src="ieseg.jpg" height="40" alt="IÉSEG"></a>
-  <a href="https://iflame.ieseg.fr/"><img src="iflame.png" height="40" alt="IFLAME"></a>
-  <a href="https://lem.univ-lille.fr/"><img src="lem.png" height="40" alt="LEM"></a>
-  <a href="https://www.univ-lille.fr/"><img src="univlille.png" height="40" alt="University of Lille"></a>
-</div>
-
-## Contact
-
-* **Email:** [a.gobriel@ieseg.fr](mailto:a.gobriel@ieseg.fr)
-* **BlueSky:** [@antonygobriel.bsky.social](https://bsky.app/profile/antonygobriel.bsky.social)
-* **LinkedIn:** [antony-gobriel](https://www.linkedin.com/in/antony-gobriel)
+  </main>
+</body>
+</html>
