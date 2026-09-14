@@ -13,15 +13,20 @@
    Tokens
 ────────────────────────────────────────── */
 :root {
-  --bg:            #FDFCFF;
-  --bg-card:       #F2EDF9;
-  --bg-card-hover: #EAE2F4;
-  --lavender:      #9B84C8;
-  --lavender-dark: #6B5594;
-  --lavender-pale: #E4DCF2;
-  --text:          #2C2438;
-  --text-muted:    #7B6E8A;
-  --border:        #DDD5ED;
+  --bg:            #FCFBF9; /* Creamy white main background */
+  --bg-card:       #F3F0EA; /* Light beige for cards/sections */
+  --bg-card-hover: #EBE6DC; /* Slightly darker beige for hover states */
+  
+  /* Retaining the original variable names so the rest of the code works, 
+     but replacing the purple hex codes with warm taupe/caramel tones */
+  --lavender:      #A38A70; /* Main accent color */
+  --lavender-dark: #7A624A; /* Darker tone for links and hover states */
+  --lavender-pale: #EAE3D9; /* Pale tone for backgrounds of tags and borders */
+  
+  --text:          #3B342D; /* Dark espresso brown (softer than pure black) */
+  --text-muted:    #82776D; /* Muted brown for dates and secondary info */
+  --border:        #DFD8CD; /* Soft beige for dividing lines */
+  
   --radius-card:   16px;
   --radius-pill:   50px;
   --max-w:         780px;
